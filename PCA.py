@@ -9,8 +9,8 @@ X=df.iloc[:,:-1]
 #X=df
 #scaledX=scale(X)
 p=PCA()
-p.fit(X)
-W=p.components_.T
+p.fit(X)   #fit pca model 
+W=p.components_.T     #give U (like eignvalue)8*8
 y=p.fit_transform(X)
 yhat=X.dot(W)
 plt.figure(1)
