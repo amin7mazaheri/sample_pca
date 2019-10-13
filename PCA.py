@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 from sklearn.decomposition import PCA
 from sklearn.preprocessing import scale
 #df=pd.read_csv('D:/Laptop backup 2/course work2/course works2/Data Science program/files/LAX-air-pollution.csv')
-df=pd.read_csv('D:/Laptop backup 2/course work2/course works2/Data Science program/files/men-track-records.csv')
+df=pd.read_csv('./men-track-records.csv')
 X=df.iloc[:,:-1]
 #X=df
 #scaledX=scale(X)
