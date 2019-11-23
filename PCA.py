@@ -11,8 +11,8 @@ X=df.iloc[:,:-1]
 p=PCA()
 p.fit(X)   #fit pca model 
 W=p.components_.T     #give U (like eignvalue)8*8
-y=p.fit_transform(X)
-yhat=X.dot(W)
+y=p.fit_transform(X)   # (x-x')*w 
+yhat=X.dot(W)          # like line y in the above          
 plt.figure(1)
 plt.scatter(yhat.iloc[:,0],yhat.iloc[:,1],c="red",marker='o',alpha=0.5)
 plt.xlabel('PC Scores 1')
